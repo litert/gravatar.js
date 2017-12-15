@@ -1,0 +1,39 @@
+{
+  "name": "@litert/gravatar",
+  "version": "0.1.0",
+  "description": "A toolkits for using gravatar.",
+  "main": "./index.js",
+  "scripts": {
+    "prepare": "npm run rebuild",
+    "build": "sh ./build-scripts/build-all.sh",
+    "build-node": "tsc -p tsconfig.json",
+    "build-amd": "tsc -p tsconfig-amd.json",
+    "build-umd": "tsc -p tsconfig-umd.json",
+    "build-es2015": "tsc -p tsconfig-es2015.json",
+    "build-system": "tsc -p tsconfig-system.json",
+    "rebuild": "npm run clean && npm run build",
+    "test": "npm run build-node && node dist/test.js",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "litert",
+    "lrt",
+    "gravatar"
+  ],
+  "author": "Angus.Fenying <i.am.x.fenying@gmail.com> (https://fenying.net)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/litert/gravatar.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/litert/gravatar.js/issues"
+  },
+  "homepage": "https://github.com/litert/gravatar.js#readme",
+  "types": "./dist/index.d.ts",
+  "typings": "./dist/index.d.ts",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^8.5.1"
+  }
+}
