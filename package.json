@@ -1,8 +1,8 @@
 {
   "name": "@litert/gravatar",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A toolkits for using gravatar.",
-  "main": "./index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "prepare": "npm run rebuild",
     "build": "sh ./build-scripts/build-all.sh",
